@@ -11,10 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class App {
 
     public static void main(String[] args) {
-        /* System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
-        WebDriver driver = new ChromeDriver();
+        //System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
+        //WebDriver driver = new ChromeDriver();        
+        /*
         try {
-            driver.get("https://es.wikipedia.org/"); 
+            
             
                     
             
@@ -31,7 +32,7 @@ public class App {
             System.out.println(tituloPagina.getTitle());
             assertEquals("Portal:Comunidad", cajaBusqueda);
             
-            /*System.out.println(driver.findElement(By.id("footer")).getAttribute("role"));
+            System.out.println(driver.findElement(By.id("footer")).getAttribute("role"));
 
             List<WebElement> elementosDiv = driver.findElements(By.tagName("div"));
             for (WebElement webElement : elementosDiv) {
@@ -45,15 +46,9 @@ public class App {
         
         driver.quit();
         */
-
         
-    }
-    @Test
-        public void test_checkbox(){
-            System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
-            WebDriver driver = new ChromeDriver();
-            driver.get("src/index.html");
-        }
+
+    }    
 
         
     
