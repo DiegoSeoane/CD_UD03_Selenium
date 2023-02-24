@@ -14,11 +14,19 @@ public class FormTest {
     WebDriver driver ;
     @Before
     public void setUP(){
-        System.setProperty("webdriver.chrome.driver", "/home/sanclemente.local/a22diegosg/Escritorio/CD_UD03_Selenium/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/media/a22diegosg/a22diegosg_documentos/ContornosDesenvolvemento/2ºTrimestre/CD_UD03_Selenium1/driver/chromedriver");
         driver = new ChromeDriver();  
-        driver.get("file:///home/sanclemente.local/a22diegosg/Escritorio/CD_UD03_Selenium/src/index.html");             
+        driver.get("https://siciliainbocca.es/web_wp/santiago");             
     }
-    
+    @Test
+    public void testCPF2(){
+        WebElement a = driver.findElement(By.id("menu-item-1953"));
+        a.click(); 
+        WebElement b = driver.findElement(By.linkText("https://siciliainbocca.es/web_wp/producto/margheritapizza"));
+        b.click();
+    }
+
+    /*
     @Test
     public void testCombo(){
          
@@ -49,5 +57,5 @@ public class FormTest {
         menu.selectByIndex(0);        
         menu.selectByValue("2");
         menu.selectByVisibleText("Tres");
-    }
+    }*/
 }
